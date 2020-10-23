@@ -20,11 +20,20 @@ public class Calculos {
         c = Leitor.nextDouble();
 		
 	}
-	public void CalculoDelta() {
+	public void Conta() {
 		delta = (b*b)-((4*a)*c);
-	}
-	public void CalculoX() {
-		x1 = ((-b)+ (Math.sqrt(delta)))/2*a;
-		x2 = ((-b)- (Math.sqrt(delta)))/2*a;
-	}
-}
+		System.out.println("o valor de delta é: " + delta);
+		
+		if(delta < 0) {
+	    	System.out.println("equação não possivel..");
+	    	
+	    }
+		
+		x1 = ((-b)+ (Math.sqrt(delta))) /(2*a);
+	    System.out.println("Valor de x1:" +x1);
+
+	    x2 =((-1*b) - Math.sqrt(delta)) /(2*a); 
+	    System.out.println("Valor de x2:" +x2);
+	   	
+	}}
+
